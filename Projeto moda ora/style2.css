@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --title-font: 'Federo';
+    --text-font: 'Roboto';
+    --menu-text-color: #425564;
+}
+
+html, body { /*Muito bom ter em todos os códigos.*/
+    min-width: 860px;
+    width: 100%;
+    font-size: 62.5%;
+}
+
+header {
+    padding: 1;
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url(./imagens/topo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3em;
+    background-color: #162028;
+    padding: 2.6em;
+}
+
+.header-navigation__title {
+    font-family: var(--title-font);
+    color: var(--menu-text-color);
+    font-size: 4em;
+    text-transform: uppercase;
+
+}
+
+.header-navigation ul {
+    display: flex;
+    gap: 6em;
+    font-family: var(--text-font);
+}
+
+.header-navigation ul li {
+    font-size: 2.4em;
+    list-style: none;  
+}
+
+.header-navigation ul li a {
+    color: var(--menu-text-color);
+    text-decoration: none;
+}
+
+.header-navigation ul li a:hover {
+    outline: 2px solid white;
+    background-color: #100e2cc5;
+    color: white;
+    padding: 0.7em;
+    transition: background-color;
+    transition-duration: .6s;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+   max-width: 100%;
+   width: 100vw;
+   height: 100vh;
+    text-align: center;
+    /* font-size: 2.5em; */
+}
+
+.main-section__text h2{
+    font-size: 6em;
+    margin-top: .5em;
+    font-family: var(--title-font);
+} 
+
+.main-section__text p {
+    
+    font-family: var(--text-font);
+    max-width: 50%;
+    font-size: 2.7em;
+    text-align: center;
+    line-height: 2em;
+    margin: 1em auto;
+}
+
+.main-section ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3.5rem;
+    gap: 4em;
+}
+
+.main-section li {
+    list-style: none;
+    font-size: 4ch;
+}
+
+
+.main-section_image_text h3 {
+    margin: .5em 0;
+    font-size: 1.3em;
+    font-family: var(--text-font);
+}
+
+.main-section_image_text p {
+    font-family: var(--text-font);
+    font-size: 1.2em;
+    color: black;
+}
+
+.sub-section {
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./imagens/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    padding: 1px;
+}
+
+
+
+.sub-section-article h4 {
+    color: #fff;
+    font-family: var(--title-font);
+    max-width: 90%;
+    font-size: 8em;
+    text-align: left;
+    margin: 3em 5em 1em;
+    
+}
+
+.sub-section-article p {
+    color: #fff;
+    max-width: 90%;
+    font-size: 7ch;
+    line-height: 1.3em;
+    text-align: left;
+    margin: 3em 5em 1em;
+}
+
+footer {
+    background-color: #0b171f;
+    color: #6f8597;
+    padding: 1.6em;
+    text-align: center;
+    font-size: 2.4em;
+}
+
+
